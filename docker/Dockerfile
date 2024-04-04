@@ -1,0 +1,32 @@
+FROM node:18-alpine3.17
+
+RUN apk --no-cache upgrade && \
+    apk --no-cache add --virtual build-dependencies alpine-sdk python3 libtool autoconf automake rust cargo cmake clang15-libs clang15-dev clang15 rustfmt linux-headers
+
+RUN addgroup -g 1100 kruuu && \
+    adduser -h /home/kruuu -s /bin/bash -u 1100 -G kruuu -D kruuu
+
+USER kruuu
+WORKDIR /home/kruuu
+
+RUN git clone --branch develop https://gitlab.com/kruuu1/kruuu-core.git
+
+WORKDIR /home/kruuu/kruuu-core
+
+# TODO: should be using latest branch/commit, even better: release/tag
+#RUN git checkout -b develop
+#RUN git pull origin develop --ff-only
+
+RUN npm i
+RUN npm run build
+RUN chmod +x /home/kruuu/kruuu-core/bin/run
+
+USER root
+RUN apk --no-cache del build-dependencies
+
+USER kruuu
+RUN mkdir /home/kruuu/.lisk
+VOLUME /home/kruuu/.lisk
+
+ENTRYPOINT ["/home/kruuu/kruuu-core/bin/run"]
+CMD ["start", "--network", "testnet"]

@@ -1,0 +1,4 @@
+export const BLOCK_API_SERVICE = Symbol('BLOCK_API_SERVICE');
+export const BLOCK_FEE_SERVICE = Symbol('BLOCK_FEE_SERVICE');
+
+export const BLOCK_API_MODULE_OPTIONS = Symbol('BLOCK_API_MODULE_OPTIONS');

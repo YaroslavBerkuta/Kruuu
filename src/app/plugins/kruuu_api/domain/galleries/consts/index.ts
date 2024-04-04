@@ -1,0 +1,3 @@
+export const GALLERY_REPOSITORY = Symbol('GALLERY_REPOSITORY');
+
+export const GALLERY_SERVICE = Symbol('GALLERY_SERVICE');

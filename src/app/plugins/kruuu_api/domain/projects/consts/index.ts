@@ -1,0 +1,3 @@
+export const PROJECTS_REPOSITORY = Symbol('PROJECTS_REPOSITORY');
+
+export const PROJECTS_SERVICES = Symbol('PROJECTS_SERVICES');

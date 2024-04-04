@@ -1,0 +1,62 @@
+{
+	"system": {
+		"dataPath": "~/.lisk/beta-sdk-app",
+		"keepEventsForHeights": 300,
+		"logLevel": "warn"
+	},
+	"rpc": {
+		"modes": ["ipc", "ws", "http"],
+		"allowedMethods": ["*"],
+		"port": 7887,
+		"host": "0.0.0.0"
+	},
+	"network": {
+		"version": "1.0",
+		"seedPeers": [],
+		"port": 7667
+	},
+	"transactionPool": {
+		"maxTransactions": 4096,
+		"maxTransactionsPerAccount": 64,
+		"transactionExpiryTime": 10800000,
+		"minEntranceFeePriority": "0",
+		"minReplacementFeeDifference": "10"
+	},
+	"genesis": {
+		"block": {
+			"fromFile": "./config/genesis_block.blob"
+		},
+		"blockTime": 10,
+		"bftBatchSize": 103,
+		"maxTransactionsSize": 15360,
+		"chainID": "046b7275"
+	},
+	"generator": {
+		"keys": {
+			"fromFile": "./config/dev-validators.json"
+		}
+	},
+	"modules": {
+		"did": {
+			"chainspace": "kruuu",
+			"autoCreateAddressDID": true
+		},
+		"fee": {
+			"minFeePerByte": 0,
+			"maxBlockHeightZeroFeePerByte": 0
+		}
+	},
+	"plugins": {
+		"faucet": {
+			"tokenID": "046b727500000000",
+			"encryptedPrivateKey": "kdf=argon2id&cipher=aes-128-gcm&version=1&ciphertext=1d6fbecad007958468249dd4969a7b667c35d2fe5a637db4d33dcbc07407958f6249fd87d4cf375a9a4ef422024ed1336c60b220131a9c12f4f7d026dff874db9d862b6ed861b7563c0e92c1ce9763ee2031c12fe33f5bad538736ced069d4d00afc32c381fc3adc588b5e9e8ad3f2d2633c46390d3d14c497ef99f4b872354a&mac=bbdad4ee8cbe82c6c97dee6e5c0132c07b867aab3072a7252daa095891f59ad8&salt=8f304900e398803b&iv=259719d7c5833ebfef18f87ce95b0035&tag=0fa45edd6acde5f8e381443d4e0a21ab&iterations=1&parallelism=4&memorySize=2097023",
+			"captchaSecretkey": "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe",
+			"captchaSitekey": "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI",
+			"amount": "2000",
+			"host": "0.0.0.0"
+		},
+		"dashboard": {
+			"host": "0.0.0.0"
+		}
+	}
+}

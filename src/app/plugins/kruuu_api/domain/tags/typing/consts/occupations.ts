@@ -1,0 +1,142 @@
+import { TagCategory } from '../enums';
+
+export const OCCUPATIONS = [
+	{
+		name: 'Actor',
+		key: 'actor',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Extras',
+		key: 'extras',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Model',
+		key: 'model',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Singer',
+		key: 'singer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Producer',
+		key: 'producer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Cinematographer',
+		key: 'cinematographer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Director',
+		key: 'director',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Production designer',
+		key: 'productionDesigner',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Audio engineer',
+		key: 'audioEngineer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Stunt coordinator',
+		key: 'stuntCoordinator',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Sound editor',
+		key: 'soundEditor',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Casting director',
+		key: 'castingDirector',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Choreographer',
+		key: 'choreographer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Writer',
+		key: 'writer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Composer',
+		key: 'composer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Lighting designer',
+		key: 'lightingDesigner',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Mix engineer',
+		key: 'mixEngineer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Sound engineer',
+		key: 'soundEngineer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Production assistant',
+		key: 'productionAssistant',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Cameramen',
+		key: 'cameramen',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Dancer',
+		key: 'dancer',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Guitarist',
+		key: 'guitarist',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+	{
+		name: 'Video editor',
+		key: 'videoEditor',
+		category: TagCategory.Occupation,
+		parentKey: null,
+	},
+];
